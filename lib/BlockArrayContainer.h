@@ -30,7 +30,7 @@ private:
 			MACRO_PER_BITS_PER_BLOCK
 #undef BPB_MACRO
 		default:
-			throw std::runtime_error("invalid bits-per-block: " + std::to_string((bitsPerBlock)));
+			throw std::runtime_error("invalid bits-per-block: " + std::to_string(bitsPerBlock));
 		}
 	}
 
@@ -55,7 +55,7 @@ public:
 			MACRO_PER_BITS_PER_BLOCK
 #undef BPB_MACRO
 		default:
-			throw std::invalid_argument("invalid bits-per-block: " + std::to_string((bitsPerBlock)));
+			throw std::invalid_argument("invalid bits-per-block: " + std::to_string(bitsPerBlock));
 		}
 	}
 
